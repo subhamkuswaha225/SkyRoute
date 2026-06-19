@@ -5,12 +5,13 @@
 
 // Replace these with your Firebase project credentials
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyC5Ml4ZfjU-RgXNdI0GDDqNtkgOHBH_BXU",
+  authDomain: "skyroute-cdc44.firebaseapp.com",
+  projectId: "skyroute-cdc44",
+  storageBucket: "skyroute-cdc44.firebasestorage.app",
+  messagingSenderId: "563463382599",
+  appId: "1:563463382599:web:f963b3596e1234644ff362",
+  measurementId: "G-6DVE0HEFD2"
 };
 
 let firebaseApp = null;
