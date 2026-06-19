@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SkyRoute — Your premium flight booking companion. Discover seamless flights, smart layover recommendations, and luxury travel experiences.">
+  <meta name="keywords" content="flights, booking, travel, airline, layover, hotels, SkyRoute">
+  <meta name="author" content="SkyRoute">
+  <meta name="theme-color" content="#FDFCF8">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="SkyRoute — Find Your Perfect Flight">
+  <meta property="og:description" content="Smart flight search, layover hotel recommendations, and premium booking experience.">
+  <meta property="og:type" content="website">
+  
+  <title>SkyRoute — Find Your Perfect Flight</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈</text></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <!-- App Mount Point -->
+  <div id="app">
+    <!-- Loading screen shown before JS loads -->
+    <div style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; font-family: 'Outfit', sans-serif;">
+      <div style="font-size: 3rem; animation: pulseBreath 2s ease-in-out infinite;">✈️</div>
+      <div style="font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; color: #2D2D2D;">SkyRoute</div>
+      <div style="font-size: 0.875rem; color: #A09890;">Preparing your journey...</div>
+    </div>
+  </div>
+
+  <!-- Firebase SDK (CDN) -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+  <!-- Core Scripts (order matters) -->
+  <script src="js/mockData.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/firebase.js"></script>
+  <script src="js/router.js"></script>
+
+  <!-- Components -->
+  <script src="js/components/scrollReveal.js"></script>
+  <script src="js/components/navbar.js"></script>
+  <script src="js/components/aiAssistant.js"></script>
+  <script src="js/components/cursor.js"></script>
+  <script src="js/components/authModal.js"></script>
+
+  <!-- Pages -->
+  <script src="js/pages/home.js"></script>
+  <script src="js/pages/flightResults.js"></script>
+  <script src="js/pages/flightDetails.js"></script>
+  <script src="js/pages/booking.js"></script>
+  <script src="js/pages/dashboard.js"></script>
+  <script src="js/pages/onboarding.js"></script>
+  <script src="js/pages/profile.js"></script>
+
+  <!-- App Entry Point (must be last) -->
+  <script src="js/app.js"></script>
+</body>
+</html>
