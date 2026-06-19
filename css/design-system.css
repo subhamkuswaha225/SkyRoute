@@ -144,34 +144,20 @@ body {
   background-color: var(--color-foundation);
   line-height: 1.6;
   overflow-x: hidden;
-  cursor: none;
-}
-
-/* Show default cursor on touch devices */
-@media (pointer: coarse) {
-  body { cursor: auto; }
 }
 
 a {
   text-decoration: none;
   color: inherit;
-  cursor: none;
-}
-
-@media (pointer: coarse) {
-  a { cursor: pointer; }
+  cursor: pointer;
 }
 
 button {
   border: none;
   background: none;
   font-family: inherit;
-  cursor: none;
+  cursor: pointer;
   font-size: inherit;
-}
-
-@media (pointer: coarse) {
-  button { cursor: pointer; }
 }
 
 input, select, textarea {

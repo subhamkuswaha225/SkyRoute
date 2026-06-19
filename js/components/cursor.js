@@ -4,8 +4,8 @@
    ============================================================ */
 
 function initCustomCursor() {
-  // Skip on touch devices
-  if (window.matchMedia('(pointer: coarse)').matches) return;
+  // Disabled custom cursor animation (using default browser cursor as requested)
+  return;
 
   const cursor = document.createElement('div');
   cursor.classList.add('custom-cursor');
